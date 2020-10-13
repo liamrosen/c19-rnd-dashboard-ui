@@ -4,21 +4,7 @@ import { withRouter } from 'react-router-dom'
 import { withWidth } from '@material-ui/core'
 import { SpreadCategoryButtons } from './CategoryMenu'
 import { CategoryMenu } from './CategoryMenu'
-
-const categoryOptions = [
-  {
-    label: 'Vaccine',
-    route: '/vaccine',
-  },
-  {
-    label: 'Treatment',
-    route: '/treatments',
-  },
-  {
-    label: 'Vaccine & Treatment',
-    route: '/vt',
-  },
-]
+import { categoryOptions } from 'routes'
 
 export const Container = ({ location, history, width }) => {
   const selectedCategory =
